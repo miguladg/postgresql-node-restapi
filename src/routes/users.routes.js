@@ -15,12 +15,12 @@ router.post('/users', (req, res) => {
     res.send('creando usuario')
 })
 
-router.get('/users', (req, res) => {
-    res.send('obteniendo usuarios')
+router.delete('/users/:id', (req, res) => {
+    res.send('Eliminando usuario')
 })
 
-router.get('/users', (req, res) => {
-    res.send('obteniendo usuarios')
+router.get('/users/:id', (req, res) => {
+    res.send('obteniendo usuario')
 })
 
 export default router;
